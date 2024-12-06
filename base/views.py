@@ -32,7 +32,7 @@ def loginPage(request):
         if user is not None:
             login(request, user)
             return redirect('home')
-        else
+        else:
             messages.error(request, 'Username or password does not exist')
         
         
